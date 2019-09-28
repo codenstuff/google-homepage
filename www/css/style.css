@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  flex: none;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1px;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-grid div {
+  height: 5px;
+  width: 5px;
+  background: black;
+}
+
+main {
+  overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: black;
+}
+
+form, .search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 100%;
+}
+
+
+.search-bar input {
+  width: 350px;
+  line-height: 24px;
+  border: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 24px;
+  margin: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.left a, .right a{
+  margin: 0 12px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+  fill: #9AA0A6;
+}
+
+a.sign-in {
+  padding: 6px 12px;
+  border-radius: 3px;
+  background: #005ae0;
+  color: white;
+}
+
+.search-buttons input {
+  padding: 0 16px;
+  margin: 11px 4px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #5F6368;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 36px;
+  line-height: 27px;
+}
+
+.search-buttons input:hover {
+  color: #222;
+  border: 1px solid #c6c6c6;
+}
+
+img.google {
+  height: 92px;
+  width: 272px;
+}
+
+img.voice {
+  height: 24px;
+  width: 24px;
+  align-self: flex-end;
+}
+
+footer {
+  background: #F2F2F2;
+  border-top: 1px solid #e4e4e4;
+  width: 100%;
+}
